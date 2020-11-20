@@ -22,6 +22,7 @@ time, mark, audio, video {
 
 body{
     width: 100%;
+    font-family: 'Playfair Display', serif;;
 }
 
 /* ---------------- my css ---------------*/
@@ -51,10 +52,10 @@ header{
     display: block;
     width: 33px;
     height: 4px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     position: relative;
     background: #cdcdcd;
-    border-radius: 3px;
+    border-radius: 1px;
 }
 
 .banner{
@@ -63,4 +64,13 @@ header{
     height: 667px;
     background-size: cover;
     background-position: -100px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.banner .call{
+    margin: 80px 30px;
+    font-size: 38px;
+    color: #E7E9E6;
 }
