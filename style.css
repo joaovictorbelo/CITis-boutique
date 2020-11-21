@@ -65,6 +65,7 @@ header .logo-container{
     width: 33px;
     height: 33px;
     margin: 0;
+    opacity: 0;
 }
 
 .hamburger-menu input:checked ~ .menu{
