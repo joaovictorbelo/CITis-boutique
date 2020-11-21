@@ -9,23 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
+    <header id="header">
+        <div class="logo-container" >
             <img src="./assets/logo-branca.svg" alt="logo">
         </div>
         <nav class="hamburger-menu">
+            <input type="checkbox">
+            
             <span></span>
             <span></span>
             <span></span>
+
+            <div class="menu">
+                <a href="#banner">HOME</a>
+                <a href="#products">PRODUTOS</a>
+                <a href="#footer">CONTATO</a>
+            </div>
         </nav>
+        
     </header>
-    <section class="banner">
+    <section class="banner" id="banner">
         <div class="call">
             <h1>Intensifique <br> o seu brilho</h1>
         </div>
     </section>
     <section class="teste"></section>
-    <section class="products">
+    <section class="products" id="products">
         <h2>PRODUTOS</h2>
         <div class="products-container">
             <div class="product" id="ring">
@@ -42,7 +51,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="footer">
         <div class="logo-container">
             <img src="./assets/logo-preta.svg" alt="logo">
         </div>
