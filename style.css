@@ -65,11 +65,11 @@ header .logo-container{
     width: 33px;
     height: 33px;
     margin: 0;
-    opacity: 0;
 }
 
 .hamburger-menu input:checked ~ .menu{
     visibility: visible;
+    opacity: 1;
 }
 
 .menu{
@@ -81,6 +81,19 @@ header .logo-container{
     left: 0px;
     z-index: 1;
     visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a{
+    color: #B7AB9D;
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-weight: regular;
 }
 
 .banner{
