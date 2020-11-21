@@ -59,6 +59,7 @@ header .logo-container{
     z-index: 2;
 }
 
+
 .hamburger-menu input{
     z-index: 3;
     position: absolute;
@@ -71,6 +72,24 @@ header .logo-container{
 .hamburger-menu input:checked ~ .menu{
     visibility: visible;
     opacity: 1;
+}
+
+.hamburger-menu input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg);
+  margin-top: -11px;
+  width: 40px;
+}
+
+.hamburger-menu input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+}
+
+.hamburger-menu input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg);
 }
 
 .menu{
