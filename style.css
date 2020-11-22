@@ -28,24 +28,27 @@ body{
 /* ---------------- my css ---------------*/
 
 header{
-    position: fixed;
+    position: absolute;
     width: 100%;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header .logo-container{
-    width: 134px;
-    margin: 35px 40px;
+    width: fit-content;
+    margin: calc(20px + 3vw) 10vw;
 }
 
 .logo-container > img{
-    width: 100%;
+    width: calc(120px + 5vw);
 }
 
 .hamburger-menu{
     margin: 0 30px;
+    position: fixed;
+    right: 0;
 }
 
 .hamburger-menu span{
@@ -120,6 +123,30 @@ header .logo-container{
     font-size: 35px;
     margin-bottom: 40px;
     font-weight: regular;
+    text-decoration: none;
+}
+
+.navbar{
+    color: #E7E9E6;
+}
+
+.navbar a{
+    font-size: calc(5px + 1.5vw);
+    margin-right: 5vw;
+    text-decoration: none;
+}
+
+.navbar a:visited{
+    color: #E7E9E6;
+}
+
+.navbar > span{
+    background: #E7E9E6;
+    display: block;
+    height: 1px;
+    width: 45vw;
+    margin-top: 23px;
+    transform: translateX(50px);
 }
 
 .banner{
@@ -135,7 +162,7 @@ header .logo-container{
 
 .banner .call{
     margin: 80px 30px;
-    font-size: 38px;
+    font-size: calc(30px + 3vw);
     color: #E7E9E6;
 }
 
@@ -201,14 +228,15 @@ header .logo-container{
 
 footer{
     background-color: #B7AB9D;
-    height: 390px;
+    height: 370px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-footer .logo-container{
+footer .logo-container img{
+    margin-top: 10px;
     width: 220px;
 }
 
@@ -231,15 +259,21 @@ footer .logo-container{
 }
 
 .credits{
-    height: 60px;
+    height: calc(40px + 1.5vw);
     background: #E7E9E6;
     width: 100%;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
 .credits h2{
-    font-size: calc(10px + 1vw);
+    font-size: calc(15px + .5vw);
+}
+
+@media only screen and (max-width: 800px){
+    .navbar{
+        visibility: hidden;
+    }
 }
 
 @media only screen and (min-width: 800px){
@@ -254,5 +288,25 @@ footer .logo-container{
     .credits h2{
         padding-right: 10vw;
         float: right;
+    }
+
+    .hamburger-menu{
+        visibility: hidden;
+    }
+
+    .menu{
+        visibility: hidden !important;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    .banner{
+        background-size: 100%;
+        background-position: 10% 25%;
+        height: 90vh;
+    }
+
+    .banner .call{
+        margin: 7vw 10vw;
     }
 }
